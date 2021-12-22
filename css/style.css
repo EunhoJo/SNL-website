@@ -1,0 +1,17 @@
+body {
+    color: #191919;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a, a:link {
+    text-decoration:none;
+    
+}
+
+/* header style */
+.logo {
+    text-align: center; /* 사진을 글자로 인식 */
+    width: 154px; /* pixel element : 픽셀, 화소 ( 점 dot <--> pixel ) */
+    height: 152px;
+    margin:0 auto; /* text-align: center; 같은 말 */
+}
