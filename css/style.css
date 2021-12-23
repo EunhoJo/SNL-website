@@ -1,11 +1,11 @@
 body {
     color: #191919;
     font-family: 'Nanum Gothic', sans-serif;
+    
 }
 
 a, a:link {
     text-decoration:none;
-    
 }
 
 /* header style */
@@ -16,56 +16,156 @@ a, a:link {
     margin:0 auto; /* text-align: center; 같은 말 */
 }
 
-.picture img {
-   width: 1190px;
-   }
 
 .picture {
+    background:url("../images/heroImg.jpg") center; /* 색 또는 이미지 용도 */
+    height: 335px;
+}
+
+.picture img{
+  width: 100%;
+}
+
+
+
+.menu {
+    background:#191919;
     text-align: center;
 }
 
-ul {
-    text-align: center;
+.menu a {
+    color:white
 }
 
-.menu li{  
-    display: inline;
-   }
+.menu li {
+    display: inline-block; /* block 과 반대말 */
+    padding: 10px 0;
+    height: 20px;
+    
+}
+
+.menu li:nth-child(2) {
+    margin: 0 30px;
+}
+
+.menu a:hover {
+    color: #01ccff
+}
 
 table,th, td {
     border: 1px solid #191919;
-    padding:10px;
-    border-collapse: collapse;
-   }
+    padding:20px;
+      }
+      
+ table {
+    border-collapse: collapse; /* 테두리 겹침 :) */
+ }     
 
 table, th{
     margin:0 auto;
 }
 
-
+th, td {
+    text-align: center; /* 가로만 */
+    padding:10px 10px;
+    vertical-align: middle; /* 세로 */
 }
-caption {
-    margin: 20px;
-    }
 
-.exter-menu {
-    padding: 0 0 20px 0;
+#th_fee th {
+  width: 25%; /* 800 x 0.25 ==> 200px */
 }
-.exter-menu li{
-    display: inline;
+
+#tb_cast th{
+    width: 25%;
+}
+
+#tb_cast td{
+    width: 75%;
+}
+
+#tb_cast {
+    margin-bottom:50px;
+}
+
+
+
+#tb_fee tr:nth-child(1) th {
+    background: yellow;
+}
+
+th {
+    background: #f7f7f7;
     }
+.bg {
+    background: #ffeded;
+}
+
+.point {
+    color: #ff0000;
+}
+
+table {
+    width: 800px; /* %는 창이 바뀌면 같이 변함 */
+}
+
+caption {  
+    padding:10px;
+    font-size: 1em;
+ }
+
+ /* footer */
+
+.extra-menu {
+  text-align: center;
+  
+  color :#191919
+}
+
+.extra-menu li{
+    display: inline-block;
+    padding: 10px;
+    height: 10px;
+ }
+
 
 .footer-logo {
     text-align: center;
-    
+    width: 103px;
+    height: 101px;
+    margin:0 auto;
+    padding: 20px 0 20px 0;
 }
+}
+
 .footer-logo_p1 {
     text-align: center;
 }
+
 .footer-logo_p2 {
     text-align: center;
 }
 
-#footer {
-    background: darkgrey;
+.black-bg {
+    background: #0f0f0f;
+    overflow: hidden; /* 겹치지 않도록 */
 }
+
+.black-bg p{
+    text-align: center;
+    color: white;
+   }
+
+   /* rwd(responsive web design, 반응형 웹디자인) */
+
+@media screen and (max-width:480px) {
+       #tb_fee, #tb_cast {
+           max-width: 90%
+       }
+       
+       .picture img{
+        width: 100%;
+      }
+      
+  }
+
+
