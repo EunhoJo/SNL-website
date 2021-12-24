@@ -1,7 +1,130 @@
+.blind { /* 구조적으로는 필요하지만, 시각적으로 필요없음 */ 
+    display: none;}
+ /* main --> event style */
+ mark{
+     background: #161010;
+     color: #ffffff; /* 글자 색상 */
+     padding: 10px 20px; /* 안 여백 */
+     border-radius: 10px;
+     letter-spacing: 5px; /* 글자 사이 간격 */
+     text-align: right;
+     text-indent: 2px;
+     margin-right: 10px;
+ }
+.schedule {
+    width: 1100px;
+    margin: 0 auto;
+}
+.schedule > h2 {
+    border-bottom: 1px solid #666;
+    margin:30px 0;
+}
+.schedule > h2 span {
+    border: 1px solid #333;
+    border-bottom:1px solid rgb(248, 247, 247);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-left:10px;
+    margin-bottom: -1px;
+}
+
+.schedule mark {
+    background:#3E3838;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+ .schedule li {
+     margin:25px 0;
+     overflow: hidden; /* ( 겹치는거 해결 ) */
+     display: flex;
+     padding-left: 15px;
+}
+
+.event {
+    width: 1100px;
+    margin: 0 auto;
+}
+.event > h2 {
+    border-bottom: 1px solid #666;
+    margin:30px 0;
+}
+.event > h2 span {
+    border: 1px solid #333;
+    border-bottom:1px solid rgb(248, 247, 247);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-left:10px;
+    margin-bottom: -1px;
+}
+
+.event mark {
+    background:#3E3838;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+ .event li {
+     margin:25px 0;
+     overflow: hidden; /* ( 겹치는거 해결 ) */
+     display: flex;
+     padding-left: 15px;
+}
+
+.event2 {
+    width: 1100px;
+    margin: 0 auto;
+}
+.event2 > h2 {
+    border-bottom: 1px solid #666;
+    margin:30px 0;
+}
+.event2 > h2 span {
+    border: 1px solid #333;
+    border-bottom:1px solid rgb(248, 247, 247);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-left:10px;
+    margin-bottom: -1px;
+}
+
+.event2 mark {
+    background:#3E3838;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+ .event2 li {
+     margin:25px 0;
+     overflow: hidden; /* ( 겹치는거 해결 ) */
+     display: flex;
+     padding-left: 15px;
+}
+
 body {
     color: #191919;
     font-family: 'Nanum Gothic', sans-serif;
-    
 }
 
 a, a:link {
@@ -16,16 +139,19 @@ a, a:link {
     margin:0 auto; /* text-align: center; 같은 말 */
 }
 
+.img{
+    float: left;
+}
 
-.picture {
-    background:url("../images/heroImg.jpg") center; /* 색 또는 이미지 용도 */
-    height: 335px;
+.desc {
+    float: right;
+    margin: 0 0 20px 0;
+    margin-top: 0;
 }
 
 .picture img{
   width: 100%;
 }
-
 
 
 .menu {
@@ -135,6 +261,8 @@ caption {
     margin:0 auto;
     padding: 20px 0 20px 0;
 }
+.footer-logo img {
+    width: 98px;
 }
 
 .footer-logo_p1 {
@@ -148,11 +276,11 @@ caption {
 .black-bg {
     background: #0f0f0f;
     overflow: hidden; /* 겹치지 않도록 */
-}
+ }
 
 .black-bg p{
     text-align: center;
-    color: white;
+    color: #999999;
    }
 
    /* rwd(responsive web design, 반응형 웹디자인) */

@@ -23,9 +23,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
-
+    <style>  
+    </style>
 </head>
 <body>
+    
     <div id="header"> <!--머릿말 : 사이트 소개, 메뉴-->
         <div class="logo">
             <img src="images/img_logo1.jpg" alt="snl : logo1">
@@ -35,31 +37,67 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">행사/이벤트</a></li>
-                <li><a href="#">요금 안내</a></li>
-                <li><a href="#">금주 베스트</a></li>
+                <li><a href="#">event.html</a></li>
+                <li><a href="#">fee.html</a></li>
+                <li><a href="#">best.html</a></li>
             </ul>
         </div>
     </div>
 
     <div id="main">
-        <div class="schedule">이달의 행사</div>
-            <h2>이달의 행사</h2>
-            <ul>
+        <div class="schedule">
+            <h2><span>이달의 행사</span></h2>
+                <ul>
                 <li>
-                    <img src="images/schedule_img1.jpg" alt="토크 콘서트">
-                    <ul>
-                        <li><mark>기간</mark> 2021.12.24~25(2일)</li>
-                        <li><mark>시간</mark> 2021.12.24~25(2일)</li>
-                        <li><mark>인원</mark> 2021.12.24~25(2일)</li>
-                        <li><mark>내용</mark> 직장인 20대들의 고충상담, 토크콘서트</li>
+                    <figure class="img">
+                        <img src="images/schedule.png" alt="토크 콘서트">
+                        <figcaption></figcaption>
+                    </figure>
+                    <ul class="desc">
+                             <li><mark>일시</mark> : 2021년  01월 23일 오전 7시 ~ 오전 10시</li>
+                             <li><mark>정원</mark> : 제한 없음</li>
+                             <li><mark>내용</mark> : 무료 입장</li>
                     </ul>
                 </li>
             </ul>
-        <div class="event">이달의 행사</div>
-        <div>이벤트</div>
-    </div>
-    <div id="banneer"></div>
+        </div>
+        <div class="event">
+            <h2><span>이벤트</span></h2>
+                <ul>
+            <li>
+                    <figure id="img">
+                        <img src="images/event.png" alt="토크 콘서트">
+                        <figcaption></figcaption>
+                    </figure>
+                    <ul id="desc">
+                             <li><mark>일시</mark> : 2021년  01월 30일 오전 9시 ~ 오후 6시</li>
+                             <li><mark>정원</mark> : 100명 선착순</li>
+                             <li><mark>내용</mark> : 술안주 무료 제공</li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="event2">
+            <h2><span>이벤트</span></h2>
+                <ul>
+            <li>
+                    <figure id="img">
+                        <img src="images/talk.png" alt="토크 콘서트">
+                        <figcaption></figcaption>
+                    </figure>
+                    <ul id="desc">
+                             <li><mark>일시</mark> : 2021년  01월 30일 오전 9시 ~ 오후 6시</li>
+                             <li><mark>정원</mark> : 100명 선착순</li>
+                             <li><mark>내용</mark> : 술안주 무료 제공</li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+        
+      <div id="banneer"></div>
     <div id="footer">
         <!-- naming rull(네이밍 규칙) / coding convention-->
         <!-- camel-case 기법(ID) : 단어1단어2 (두번째 단어 첫 글자 대문자)-->
